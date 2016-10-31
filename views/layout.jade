@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    include ./includes/navbar
+    // Page Header
+    // Set your background image for this header on the line below.
+    block content
+    hr
+    // Footer
+    footer
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+            ul.list-inline.text-center
+              li
+                a(href='#')
+                  span.fa-stack.fa-lg
+                    i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-twitter.fa-stack-1x.fa-inverse
+              li
+                a(href='#')
+                  span.fa-stack.fa-lg
+                    i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-facebook.fa-stack-1x.fa-inverse
+              li
+                a(href='#')
+                  span.fa-stack.fa-lg
+                    i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-github.fa-stack-1x.fa-inverse
+            p.copyright.text-muted Copyright © Sports Blog 2016 |
+              a(href='/manage/articles') Manage Articles
+
+
+    script(src='/javascripts/jquery.min.js')
+    script(src='/javascripts/bootstrap.min.js')
