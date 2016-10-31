@@ -8,6 +8,8 @@ block content
                 h1= title
                     small
                         a(href='/manage/articles')   Manage Articles
+                if message
+                    .alert.alert-success #{message}
                 table(class='table table-striped')
                     tr
                         th Category Title

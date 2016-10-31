@@ -6,7 +6,7 @@ router.get('/articles', function(req, res, next) {
 });
 
 router.get('/categories', function(req, res, next) {
-    res.render('manage_categories', { title: 'Manage Categories' });
+    res.render('manage_categories', { title: 'Manage Categories', message: req.flash('success') });
 });
 
 router.get('/article/add', function(req, res, next) {
